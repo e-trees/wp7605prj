@@ -58,7 +58,7 @@ static void makeScreen(void)
     lv_coord_t width = lv_disp_get_hor_res(lv_disp_get_default());
     lv_coord_t height = lv_disp_get_ver_res(lv_disp_get_default());
 
-    // Label
+    // Container
     lv_obj_t *cont = lv_obj_create(lv_scr_act());
 
     static lv_style_t style;
@@ -66,7 +66,7 @@ static void makeScreen(void)
     lv_style_set_flex_flow(&style, LV_FLEX_FLOW_ROW_WRAP);
     lv_style_set_flex_main_place(&style, LV_FLEX_ALIGN_SPACE_EVENLY);
     lv_style_set_layout(&style, LV_LAYOUT_FLEX);
-    // Container
+
     lv_obj_set_size(cont, width, LV_SIZE_CONTENT);
     lv_obj_center(cont);
     lv_obj_set_align(cont, LV_ALIGN_TOP_MID);
