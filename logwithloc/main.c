@@ -166,7 +166,7 @@ int main(int argc, char **argv)
     {
         if (tick > 200)
         {
-            if (at_gpslocget(&lat, &lon, &fix) == 0)
+            if (at_gpslocget(&lat, &lon, &fix) == 0 && fix != 0)
             {
                 sprintf(strbuf, "Lat:%10.6f Lon:%9.6f", lat, lon);
                 lv_label_set_text(label_gps, strbuf);
