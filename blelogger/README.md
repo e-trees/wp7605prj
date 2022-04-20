@@ -1,5 +1,7 @@
 # Ble logger
 
+Collect the addresses of nearby BLE devices
+
 Use with bleaddrdump  
 Place the `blescan` executable in the same directory
 
